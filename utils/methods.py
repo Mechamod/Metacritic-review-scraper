@@ -91,12 +91,12 @@ def scrape_movie_reviews(movie_links, user_agents_table, proxy_table):
             reviews = soup.find_all("div", class_="review pad_top1")
             for review in reviews:
                 try:
-                    rating = get_rating(review)
-                    username = get_username(review)
-                    date = get_date(review)
-                    review_text = get_review_text(review)
-                    thumbs_up = get_thumbs_up(review)
-                    thumbs_total = get_thumbs_total(review)
+                    rating = get_rating(review).replace(';',',')
+                    username = get_username(review).replace(';',',')
+                    date = get_date(review).replace(';',',')
+                    review_text = get_review_text(review).replace(';',',')
+                    thumbs_up = get_thumbs_up(review).replace(';',',')
+                    thumbs_total = get_thumbs_total(review).replace(';',',')
                     review_information = [movie_name,
                                           movie_link,
                                           rating,
@@ -395,4 +395,4 @@ def save_reviews_to_csv(list_of_reviews, output):
                                 "Review_text",
                                 "Thumbs_up",
                                 "Thumbs_total"])
-    df.to_csv(output, sep="µ", index=False)
+    df.to_csv(output, sep=";", index=False)
