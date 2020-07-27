@@ -1,4 +1,4 @@
-![Image of Yaktocat](https://seekvectorlogo.com/wp-content/uploads/2020/06/metacritic-vector-logo.png)
+![Metacritic logo](https://seekvectorlogo.com/wp-content/uploads/2020/06/metacritic-vector-logo.png)
 
 # Metacritic review scraper
 
