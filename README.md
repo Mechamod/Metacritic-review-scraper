@@ -29,8 +29,6 @@ Clone and Setup the project as follows. If done, open the Jupyter notebook file 
 
 - Run this in shell in the main folder to install al dependencies from the requirements file.
 
-> update and install this package first
-
 ```shell
 $ pip -r requirements.txt
 ```
