@@ -34,33 +34,25 @@ Clone and Setup the project as follows. If done, open the Jupyter notebook file 
 
 ### Setup
 
-- If you want more syntax highlighting, format your code like this:
+- Run this in shell in the main folder to install al dependencies from the requirements file.
 
 > update and install this package first
 
 ```shell
-$ brew update
-$ brew install fvcproductions
+$ pip -r requirements.txt
 ```
-
-> now install npm and bower packages
-
-```shell
-$ npm install
-$ bower install
-```
-
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
 
 ---
 
-## Features
-## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
+## Usage
 
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
+Open the .ipynb in the main folder with jupyter notebook (or any other .ipynb editor) and press start.\
+If scraping multiple times, it is possible to reuse the proxy list which gets generated, just comment out the corresponding cell. \
+But be aware, proxies may change, so after sometime you need to rerun the cell to generate a more recent version of the proxyfile.
+
+## Documentation 
+
+See files for documentation.
 
 ---
 
